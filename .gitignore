@@ -1,0 +1,6 @@
+out/
+out/production/
+*.class
+.idea/workspace.xml
+.idea/
+/.idea/
