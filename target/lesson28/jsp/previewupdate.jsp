@@ -11,16 +11,13 @@
 <form action="controllerresult" method="POST">
 
     <h4>Update user:</h4>
-    <input type="hidden" type="number"  placeholder="userId" name="userId" value="<%= userEntity.getUserId()%>" required>
+    <input type="hidden" type="number" placeholder="userId" name="userId" value="<%= userEntity.getUserId()%>" required>
     <p></p>
-    <%--<label for="userId"><b>Enter user Id: </b></label>--%>
-    <%--<input type="number" placeholder="userId" name="userId" value="<%= userEntity.getUserId()%>" required>--%>
-    <%--<p></p>--%>
     <label for="name"><b>Enter user name: </b></label>
-    <input type="text" placeholder="name" name="name" value = "<%= userEntity.getName()%>" required>
+    <input type="text" placeholder="name" name="name" value="<%= userEntity.getName()%>" required>
     <p></p>
     <label for="age"><b>Enter user age: </b></label>
-    <input type="number" placeholder="age" name="age" value = "<%= userEntity.getAge()%>" required>
+    <input type="number" placeholder="age" name="age" value="<%= userEntity.getAge()%>" required>
     <p></p>
     <input type="submit" value="Update without backup"></input>
 </form>

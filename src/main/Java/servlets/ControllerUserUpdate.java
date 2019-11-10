@@ -1,6 +1,8 @@
 package servlets;
+
 import entity.UserEntity;
 import service.UserService;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,6 +18,7 @@ public class ControllerUserUpdate extends HttpServlet {
         RequestDispatcher rd = req.getRequestDispatcher("jsp/userupdate.jsp");
         rd.forward(req, resp);
     }
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UserEntity userEntity = null;
