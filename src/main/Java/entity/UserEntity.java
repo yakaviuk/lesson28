@@ -2,18 +2,18 @@ package entity;
 
 import javax.persistence.*;
 
-@Entity(name = "new_users")
+@Entity
 @Table(name = "new_users")
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "userId")
+  //  @Column(name = "userId")
     private long userId;
 
-    @Column(name = "name")
+  //  @Column(name = "name")
     private String name;
 
-    @Column(name = "age")
+ //   @Column(name = "age")
     private int age;
 
     public UserEntity(String name, int age) {

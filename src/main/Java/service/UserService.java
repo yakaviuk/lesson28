@@ -1,12 +1,11 @@
 package service;
 
-
 import dataBase.DAO;
 import dataBase.UseDAO;
 import entity.UserEntity;
 
-
 public class UserService implements Service {
+
     DAO dao;
 
     @Override
